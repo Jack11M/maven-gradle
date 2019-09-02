@@ -1,0 +1,5 @@
+description = 'gradle-task-car-model'
+
+dependencies {
+    compile project(path: ":gradle-task-impl")
+}

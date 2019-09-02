@@ -1,0 +1,2 @@
+rootProject.name = 'gradle-task'
+include 'gradle-task-api', 'gradle-task-impl', 'gradle-task-car-model', 'gradle-task-runner' 

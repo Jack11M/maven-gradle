@@ -1,0 +1,10 @@
+description = 'gradle-task-runner'
+
+apply plugin: 'application'
+
+dependencies {
+    compile project(path: ":gradle-task-impl")
+    compile project(path: ":gradle-task-car-model")
+}
+
+mainClassName = "com.hillel.Runner"

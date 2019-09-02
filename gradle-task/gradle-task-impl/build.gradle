@@ -1,0 +1,5 @@
+description = 'gradle-task-impl'
+
+dependencies {
+    compile project(path: ":gradle-task-api")
+}

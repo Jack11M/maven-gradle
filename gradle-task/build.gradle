@@ -1,0 +1,27 @@
+apply plugin: 'checkstyle'
+checkstyle {
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+allprojects {
+    group 'com.hillel'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'checkstyle'
+    
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.6'
+        annotationProcessor 'org.projectlombok:lombok:1.18.6'
+        testCompile 'junit:junit:4.12'
+    }
+}
+
