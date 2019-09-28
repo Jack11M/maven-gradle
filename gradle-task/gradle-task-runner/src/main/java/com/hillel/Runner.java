@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Runner {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
         cars.add(new Suv("Mercedes GL350", 83900, 220, 8.5, true));
         cars.add(new PassengerCar("Audi S8", 42800, 250, 14.1, 5));
